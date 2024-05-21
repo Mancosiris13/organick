@@ -1,0 +1,85 @@
+.offer-products {
+  padding: 8rem 4rem;
+  background-color: $color-body;
+
+  @media only screen and(max-width:$bp-md) {
+    // padding: 0;
+    padding: 6.4rem 1.6rem;
+  }
+
+  @media only screen and(max-width:$bp-xs) {
+    // padding: 6.4rem 1.6rem;
+    margin: 0 auto;
+  }
+
+  &__header-4 {
+    @media only screen and(max-width:$bp-md) {
+      padding: 0 1.6rem;
+      font-size: 2.8rem;
+      line-height: 4.8rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+
+    @media only screen and(max-width:$bp-md) {
+      padding: 0 1.6rem;
+      display: block;
+    }
+  }
+
+  &__header-2 {
+    color: $color-white;
+
+    @media only screen and(max-width:$bp-md) {
+      margin-bottom: 2.4rem;
+
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+  }
+
+  &__btn {
+    font-size: 2rem;
+    background-color: $color-secondary;
+    color: $color-body;
+    border: none;
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    gap: 2.4rem;
+  }
+
+  &__grid {
+    // margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(43.2rem, 1fr)
+    ); // we want each of these columns to have at least 59.2rem and it can go all the way to one fractional unit
+    grid-gap: 3.2rem;
+
+    // @media only screen and(max-width:$bp-md) {
+    //   margin: 0 4rem;
+    // }
+    @media only screen and(max-width:$bp-sm) {
+      // padding: 6.5rem 1.6rem;
+
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(36.8rem, 1fr)
+      ); // we want each of these columns to have at least 59.2rem and it can go all the way to one fractional unit
+    }
+
+    @media only screen and(max-width:$bp-xs) {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.testimonials {
+  &__grid {
+    display: grid;
+
+    grid-template-columns: max-content 1fr max-content;
+
+    @media only screen and(max-width:$bp-md) {
+      grid-template-columns: auto;
+      padding: 6.5rem 1.6rem;
+    }
+  }
+
+  &__img {
+    @media only screen and(max-width:$bp-md) {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__heading-4 {
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 2.8rem;
+      line-height: 4.8rem;
+    }
+  }
+
+  &__heading-2 {
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+  }
+
+  &__selfie {
+    margin-top: 6.4rem;
+    margin-bottom: 1.6rem;
+    border-radius: 50%;
+  }
+
+  &__star {
+    &:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__text {
+    margin-top: 3.2rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+
+    @media only screen and (max-width: $bp-sm) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__rol {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,71 @@
+//COLOR VARIABLES
+$color-primary: #7eb693;
+$color-secondary: #ffa858;
+$color-body: #274c5b;
+$color-white: #fff;
+
+$color-grey-1: #f7f7f7;
+
+$color-grey-3: #d4d4d4;
+$color-grey-4: #b8b8b8;
+$color-grey-5: #525c60;
+
+// FONT VARIABLES
+$font-primary: "Roboto";
+$font-secondary: "Yellowtail";
+
+//RESPONSIVE BREAKPOINTS
+//(bp target in pixels / 16(default browser font size) = em
+
+$bp-large: 75em; // 1200px / 16 browsers default =75em
+$bp-md: 56.25em; //900px / 16 browsers default = 56.25em
+
+$bp-sm: 37.5em; //600px / 16 browsers default = 37.5em
+
+$bp-xs: 25em; //400px / 16 browsers default = 25em
+
+// $bp-xs: 21.875em; //350px / 16 browsers default = 21.875em
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px(our target) / 16px(default by browser) = 62.5%  --> 1rem = 10px
+
+  @media only screen and(max-width:$bp-xs) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-body;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 0.036rem;
+  font-style: normal;
+  overflow-y: scroll;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+
+  max-width: 144rem;
+  overflow-x: hidden;
+
+  //   @media only screen and(max-width:$bp-large) {
+  //     max-width: 120rem;
+  //   }
+
+  // @media only screen and(max-width:$bp-xs) {
+  //   max-width: 40rem;
+  // }
+  margin: 0 auto; //centering all content
+}
